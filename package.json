@@ -1,0 +1,18 @@
+{
+  "name": "polyglot-programming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run:ts": "tsx ./typescript/main.ts",
+    "run:rust": "cargo run ./rust/main.rs"
+  },
+  "keywords": [],
+  "author": "sidwebworks",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.7.4",
+    "tsx": "^3.8.2",
+    "typescript": "^4.7.4"
+  }
+}
