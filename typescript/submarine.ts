@@ -24,16 +24,18 @@ function parseLine(line: string): [number, number] {
   return [0, amount];
 }
 
-const result = getInput()
-  .split('\n')
-  .map((line) => parseLine(line))
-  .reduce(
-    (acc, curr) => {
-      acc[0] += curr[0];
-      acc[1] += curr[1];
-      return acc;
-    },
-    [0, 0]
-  );
+export function Run() {
+  const result = getInput()
+    .split('\n')
+    .map((line) => parseLine(line))
+    .reduce(
+      (acc, curr) => {
+        acc[0] += curr[0];
+        acc[1] += curr[1];
+        return acc;
+      },
+      [0, 0]
+    );
 
-console.log(result, result[0] * result[1]);
+  console.log(result, result[0] * result[1]);
+}
