@@ -24,7 +24,7 @@ function parseLine(line: string): [number, number] {
   return [0, amount];
 }
 
-export function Run() {
+export function run() {
   const result = getInput()
     .split('\n')
     .map((line) => parseLine(line))

@@ -1,3 +1,6 @@
 import * as submarine from './submarine';
+import * as fissures from './fissures';
 
-submarine.Run();
+submarine.run();
+
+fissures.run();
